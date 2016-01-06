@@ -135,7 +135,10 @@ var _Promise = require("babel-runtime/core-js/promise")["default"];
     function invoke(method, arg) {
       var result = generator[method](arg);
       var value = result.value;
-      return value instanceof AwaitArgument ? _Promise.resolve(value.arg).then(invokeNext, invokeThrow) : result;
+      return value instanceof AwaitArgument ? _Promise.resolve(value.arg).then(invokeNext, invokeThrow) : _Promise.resolve(value).then(function (unwrapped) {
+        result.value = unwrapped;
+        return result;
+      }, invokeThrow);
     }
 
     if (typeof process === "object" && process.domain) {
