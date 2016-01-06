@@ -11,6 +11,7 @@ exports["default"] = function get(_x, _x2, _x3) {
         receiver = _x3;
     desc = parent = getter = undefined;
     _again = false;
+    if (object === null) object = Function.prototype;
 
     var desc = _Object$getOwnPropertyDescriptor(object, property);
 
