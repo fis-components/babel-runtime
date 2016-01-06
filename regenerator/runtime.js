@@ -1,13 +1,3 @@
-/**
- * Copyright (c) 2014, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * https://raw.github.com/facebook/regenerator/master/LICENSE file. An
- * additional grant of patent rights can be found in the PATENTS file in
- * the same directory.
- */
-
 "use strict";
 
 var _Symbol = require("babel-runtime/core-js/symbol")["default"];
@@ -624,3 +614,12 @@ var _Promise = require("babel-runtime/core-js/promise")["default"];
 // object, this seems to be the most reliable technique that does not
 // use indirect eval (which violates Content Security Policy).
 typeof global === "object" ? global : typeof window === "object" ? window : typeof self === "object" ? self : undefined);
+/**
+ * Copyright (c) 2014, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * https://raw.github.com/facebook/regenerator/master/LICENSE file. An
+ * additional grant of patent rights can be found in the PATENTS file in
+ * the same directory.
+ */
