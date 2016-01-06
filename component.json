@@ -1,0 +1,11 @@
+{
+    "name": "babel-runtime",
+    "description": "babel selfContained runtime",
+    "repos": "https://github.com/babel/babel.git",
+    "tag": "master",
+    "reposType": "npm",
+    "dependencies": {
+        "core-js": "^0.9.0"
+    },
+    "version": "5.5.8"
+}
